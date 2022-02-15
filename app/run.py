@@ -11,7 +11,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-batch_size", "--batch_size", type=str, help="Batch size")
     parser.add_argument("-lr", "--learning_rate", type=str, help="Learning rate in training model")
-    parser.add_argument("-epochs", "--epochs", type=str, help="Number of epcohs for train")
+    parser.add_argument("-epochs", "--epochs", type=str, help="Number of epochs for train")
     parser.add_argument("-max_len", "--max_len", type=str, help="Maximum length of each of the documents in the corpus")
     parser.add_argument("-sent", "--sentiment", type=str, help="Choose type of corpus")
     args = parser.parse_args()
