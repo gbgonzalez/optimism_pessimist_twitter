@@ -1,6 +1,6 @@
 # Model to detect pessimism and optimism in tweets  
 
-This repository provides the execution for the training and testing of two BERT models with Bi-LSTM. Each of the models uses a different corpus, the first with tweets scored as optimistic and non-optimistic and the second scored under the criteria of pessimistic and non-pessimistic tweets.
+This repository provides the training and testing of two BERT models with Bi-LSTM. Each of the models uses a different corpus, i.e. the first corpus contains tweets manually labelled as optimistic and non-optimistic and the second corpus contains tweets manually labelled as pessimistic and non-pessimistic.
 
 ## Installation
 
