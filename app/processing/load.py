@@ -18,7 +18,7 @@ def load_data(credentials, csv_train_route, csv_test_route, train_pickle_route, 
         for i, id in enumerate(csv_train["ID"]):
             tweet = api.get_status(id, tweet_mode="extended")
             tweet_sent = 0
-            if csv_train["SENTIMENT"][i] == sent:
+            if csv_train["EMOTION"][i] == sent:
                 tweet_sent = 1
             dataset_train[id] = {"text": tweet.full_text, "sent": tweet_sent}
 
@@ -29,7 +29,7 @@ def load_data(credentials, csv_train_route, csv_test_route, train_pickle_route, 
         for i, id in enumerate(csv_test["ID"]):
             tweet = api.get_status(id, tweet_mode="extended")
             tweet_sent = 0
-            if csv_test["SENTIMENT"][i] == sent:
+            if csv_test["EMOTION"][i] == sent:
                 tweet_sent = 1
             dataset_test[id] = {"text": tweet.full_text, "sent": tweet_sent}
 
